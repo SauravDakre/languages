@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTypesAndExpressions", "PrimitiveTypesAndExpressions\PrimitiveTypesAndExpressions.csproj", "{776D5448-EBBE-49C1-8332-EDADA2CCDDC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPrimitiveTypes", "NonPrimitiveTypes\NonPrimitiveTypes.csproj", "{3F116E71-DF31-4AE5-BA88-4427C05F4833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{776D5448-EBBE-49C1-8332-EDADA2CCDDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776D5448-EBBE-49C1-8332-EDADA2CCDDC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776D5448-EBBE-49C1-8332-EDADA2CCDDC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F116E71-DF31-4AE5-BA88-4427C05F4833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F116E71-DF31-4AE5-BA88-4427C05F4833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F116E71-DF31-4AE5-BA88-4427C05F4833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F116E71-DF31-4AE5-BA88-4427C05F4833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

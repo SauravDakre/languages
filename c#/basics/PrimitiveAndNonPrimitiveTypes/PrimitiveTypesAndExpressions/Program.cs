@@ -38,6 +38,18 @@ namespace Program
             const float pi = 3.14f;
             // pi = 1; cannot change value of const
 
+
+            byte b = 1;
+            int i = b;  // implicit type conversion
+            Console.WriteLine(i);
+
+            // b = i // will not compile
+            b = (byte)i;    // explicit type conversion
+            Console.WriteLine(b);
+
+            // byte nq = 10000; // code cannot be compiled as 1000 (int32) cannot be converted to byte
+           
+
         }
     }
 }
