@@ -14,6 +14,32 @@ namespace Program
             a.Introduce();
 
             Console.WriteLine(Calculator.add(2, 3));
+
+            var pt = new Point(1, 2);
+            Console.WriteLine(pt);
+            pt.SetOrigin();
+            Console.WriteLine(pt);
+        }
+    }
+
+    public struct Point
+    {
+        public int X,Y;
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public override string ToString()
+        {
+            return $"({X}, {Y})";
+        }
+
+        public void SetOrigin()
+        {
+            X = 0;
+            Y = 0;
         }
     }
 }
