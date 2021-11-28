@@ -11,5 +11,10 @@ namespace Program
         {
             Console.WriteLine($"{fn}, {ln}");
         }
+
+        public override string ToString()
+        {
+            return $"{fn}, {ln}";
+        }
     }
 }
