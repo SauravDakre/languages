@@ -15,7 +15,7 @@
             }
             string password = new string(buffer);
             Console.WriteLine("password: " +password);
-            Console.WriteLine("password: ", password);
+            Console.WriteLine("password: ", password); // this print statement will not print password value
 
             // for loop
             for (var i = 0; i < 5; i++)
