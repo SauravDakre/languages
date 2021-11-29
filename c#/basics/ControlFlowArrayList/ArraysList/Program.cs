@@ -59,6 +59,17 @@
                 new int[] { 11, 22 }
             };
             program.printJaggeredArray(jaggedArray2);
+
+            // list
+            Console.WriteLine("---- list ----");
+            var nums = new List<int>() { 1,2,3};
+            nums.Add(1);
+            nums.AddRange(new int[2] { 1, 2 });
+            foreach(int num in nums)
+            {
+                Console.WriteLine(num);
+            }
+            
         }
 
         public void print(int[] ar)
