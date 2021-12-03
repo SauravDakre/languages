@@ -5,6 +5,9 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("hello");
+            CompositionExample();
+            InheritanceExample();
+
             var p = Person.Parse("joy");
             p.IntroduceTo("roy");
 
@@ -28,6 +31,19 @@
             var indexer = new TryIndexer();
             indexer["key1"] = "value1";
             System.Console.WriteLine(indexer["key1"]);
+        }
+
+        public static void CompositionExample(){
+            var walkable = new Walkable();
+            var lion = new Lion(walkable, "t1");
+            lion.Move();
+        }
+        public static void InheritanceExample()
+        {
+            var dog = new Dog();
+            dog.Name = "shiro";
+            dog.Eat();
+            dog.Bark();
         }
 
         public static void overloadingExample()
