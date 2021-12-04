@@ -1,6 +1,6 @@
 namespace TryClass
 {
-    class Dog : Animal
+    public class Dog : Animal
     {
         public void Bark()
         {
