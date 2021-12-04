@@ -11,16 +11,6 @@ namespace TryInheritance
             PublicAccessModifiers();
             ProtectedAccessModifier();
             casting();
-            Object i = 1;
-            incr(i);
-            Console.WriteLine(i);
-        }
-
-        static void incr(Object obj)
-        {
-            int i = (int)obj;
-            i++;
-            obj = i;
         }
 
         static void casting()

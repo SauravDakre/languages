@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\class\class.csproj" />
-    <ProjectReference Include="..\InheritanceLib\InheritanceLib.csproj" />
-  </ItemGroup>
-
 </Project>
