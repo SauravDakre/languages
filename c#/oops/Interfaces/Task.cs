@@ -18,7 +18,7 @@
 
             foreach(var channel in _notificationChannels)
             {
-                channel.Notify();
+                channel.Notify();   // interface showing polymorphic behaviour as channel can be smsNotifier or emailNotifier
             }
         }
 

@@ -5,13 +5,15 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "class", "class\class.csproj", "{059AE0A7-04E5-4E47-8C9C-B29CDCF5776A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{27FAAB88-E818-4685-9D84-0F53C309430D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{27FAAB88-E818-4685-9D84-0F53C309430D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceLib", "InheritanceLib\InheritanceLib.csproj", "{07D11D17-0D00-4CE2-85C9-C2EA25304C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceLib", "InheritanceLib\InheritanceLib.csproj", "{07D11D17-0D00-4CE2-85C9-C2EA25304C67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{4CA98632-B076-4D84-BF9D-5A449EBEF12B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{4CA98632-B076-4D84-BF9D-5A449EBEF12B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{AB723A0B-F16A-461A-8FA8-08521B5CDE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{AB723A0B-F16A-461A-8FA8-08521B5CDE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{538E3EDB-29DD-4573-9535-8B85497EB85D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AB723A0B-F16A-461A-8FA8-08521B5CDE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB723A0B-F16A-461A-8FA8-08521B5CDE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB723A0B-F16A-461A-8FA8-08521B5CDE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538E3EDB-29DD-4573-9535-8B85497EB85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538E3EDB-29DD-4573-9535-8B85497EB85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538E3EDB-29DD-4573-9535-8B85497EB85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538E3EDB-29DD-4573-9535-8B85497EB85D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
