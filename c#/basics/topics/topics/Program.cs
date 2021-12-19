@@ -6,6 +6,10 @@
         {
             Console.WriteLine("namespace example");
 
+            System.Console.WriteLine("events example:");
+            tryEvent();
+
+            System.Console.WriteLine("delegates example");
             tryDelegates();
 
             n1.c1.info();
@@ -83,6 +87,18 @@
         useDelgateFunction(int x, TestBoolDelegate testBoolDelegate)
         {
             return testBoolDelegate(x);
+        }
+
+        public static void tryEvent(){
+            Circle c = new Circle();
+            Rectangle r = new Rectangle();
+
+            ShapeContainer sc = new ShapeContainer();
+            sc.AddShape(c);
+            sc.AddShape(r);
+
+            c.updateCircle(5);
+            r.updateRectangle(5,5);
         }
     }
 }
