@@ -30,5 +30,42 @@ namespace crud.Controllers
             }
             return item.AsDto();
         }
+
+        [HttpPost]
+        public ActionResult<ItemDto> CreateItem(CreateItemDto item){
+            Item newItem = new(){
+                Id = Guid.NewGuid(),
+                Name = item.Name,
+                Price = item.Price,
+                CreatedDate = DateTimeOffset.UtcNow
+            };
+            repository.CreateItem(newItem);
+            return CreatedAtAction(nameof(getItem), new {id = newItem.Id}, newItem.AsDto());
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateItem(Guid id, UpdateItemDto item){
+            var existingItem = repository.GetItem(id);
+            if(existingItem is null){
+                return NotFound();
+            }
+            var updatedItem = existingItem with 
+            {
+                Name = item.Name,
+                Price = item.Price
+            };
+            repository.UpdateItem(updatedItem);
+            return NoContent();
+        }
+
+        [HttpDelete]
+        public ActionResult DeleteItem(Guid id){
+            var existingItem = repository.GetItem(id);
+            if(existingItem is null){
+                return NotFound();
+            }
+            repository.DeleteItem(id);
+            return NoContent();
+        }
     }
 }

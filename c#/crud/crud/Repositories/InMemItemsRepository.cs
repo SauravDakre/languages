@@ -16,5 +16,19 @@ namespace crud.Repositories
         public Item GetItem(Guid id){
             return items.Where(item => item.Id == id).SingleOrDefault();
         }
+
+        public void CreateItem(Item item){
+            items.Add(item);
+        }
+
+        public void UpdateItem(Item item){
+            var index =  items.FindIndex(existingItem => existingItem.Id == item.Id);
+            items[index] = item;
+        }
+
+        public void DeleteItem(Guid id){
+            var index =  items.FindIndex(existingItem => existingItem.Id == id);
+            items.RemoveAt(index);
+        }
     }
 }
