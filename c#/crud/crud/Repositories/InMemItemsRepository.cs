@@ -2,7 +2,7 @@ using crud.Entities;
 
 namespace crud.Repositories
 {
-    public class InMemItem
+    public class InMemItemsRepository : IItemsRepository
     {
         private readonly List<Item> items = new(){
             new Item {Id = Guid.NewGuid(), Name="a", Price=10, CreatedDate=DateTimeOffset.UtcNow},

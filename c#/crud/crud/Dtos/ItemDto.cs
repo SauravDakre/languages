@@ -1,9 +1,8 @@
 using System;
 
-namespace crud.Entities
+namespace crud.Dtos
 {
-    public record Item
-    {
+    public record ItemDto{
         public Guid Id {get; init;}
         public string Name {get; init;}
         public decimal Price {get; init;}
