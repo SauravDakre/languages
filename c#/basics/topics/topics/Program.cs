@@ -1,9 +1,18 @@
-﻿namespace Topics
+﻿using System.Diagnostics;
+
+namespace Topics
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
+            Console.WriteLine("collections example");
+            tryCollections();
+
+            Console.WriteLine("async await example");
+            await tryAsync();
+            Console.WriteLine("await complete");
+
             Console.WriteLine("namespace example");
 
             System.Console.WriteLine("events example:");
@@ -47,7 +56,6 @@
             System.Console.WriteLine(testBoolDelegate(9));
 
             // lambda function
-
             testBoolDelegate = (int t) => t <= 5;
             System
                 .Console
@@ -89,16 +97,48 @@
             return testBoolDelegate(x);
         }
 
-        public static void tryEvent(){
+        public static void tryEvent()
+        {
             Circle c = new Circle();
             Rectangle r = new Rectangle();
 
             ShapeContainer sc = new ShapeContainer();
-            sc.AddShape(c);
-            sc.AddShape(r);
+            sc.AddShape (c);
+            sc.AddShape (r);
 
             c.updateCircle(5);
-            r.updateRectangle(5,5);
+            r.updateRectangle(5, 5);
+        }
+
+        public static async Task tryAsync()
+        {
+            await TryAsync.GetNumAsync();
+            await TryAsync.JustAsnyc();
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            await TryAsync.DoWork("z", 3000);
+            await TryAsync.DoWork("x", 3000);
+            await TryAsync.DoWork("y", 3000);
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            Console.WriteLine($"time elapsed:{ts.Seconds}");
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            Task z = TryAsync.DoWork("z", 3000);
+            Task y = TryAsync.DoWork("y", 3000);
+            Task x = TryAsync.DoWork("x", 3000);
+            await z;
+            await y;
+            await x;
+            sw.Stop();
+            ts = sw.Elapsed;
+            Console.WriteLine($"time elapsed:{ts.Seconds}");
+        }
+
+        public static void tryCollections(){
+            TryCollections.DictionaryCrud();
+            TryCollections.ListCrud();
         }
     }
 }
